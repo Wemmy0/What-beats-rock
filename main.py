@@ -23,15 +23,32 @@ while True:
     Rules:
     1. Respond with "Yes" if the first object can physically defeat, destroy, or nullify the second object
     2. Respond with "No" if the first object cannot realistically affect or overcome the second object
-    3. Consider only direct, physical interactions, what effect could one have on the other to make it useless
+    3. Consider only direct, physical interactions, what effect could one have on the other to make it useless or seriously damage it
     4. In your summary be creative, make jokes, be casual
     5. The objects must interact in their normal, typical state
     6. The comparison must involve a clear, logical outcome
     7. The order of the input sentence is EXTREMELY important 
+    8. For the basic rock paper scissors match ups, like scissors beats paper, answer them like part of the traditional game
+    9. Even if the match ups are ridiculous, still answer them logically, thinking about how one can physically beat the other
     
     Input format: [Object 1] beats [Object 2]
     
     Examples:
+    Pig beats gun
+    Answer:
+    No
+    A big may be smart, but there is no way a pig can survive a hit from a bullet
+    
+    Gun beats paper
+    Answer:
+    Yes
+    Whilst a piece of paper might be partly intact after a bullet, it would be significantly damaged. It looses this battle.
+    
+    Paper beats rock
+    Answer:
+    Yes
+    Ah the classic match, just like in the game, paper surrounds the rock and uses it's shear power to crush the rock into dust
+    
     
     Fire beats Mattress
     Answer:

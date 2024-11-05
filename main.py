@@ -11,34 +11,58 @@ while True:
     second = old or input("> ")
 
     if first in previous:
+        print("-" * 60)
         print("You can't do the same thing twice, that's not how this works...")
-        print("-" * 40)
+        print("-" * 60)
+        continue
 
     prompt = f"""
-    You are part of the coding of a game. Therefore you need to follow the structure given two you in your responses exactly
-    Your task is part of the code too determine whether an object "beats" another object instead of being a chat bot
-    You can think of "beat" in any way where the first destroys, breaks, takes apart, stops, harms the other
-    Respond yes if you think the first can beat the second
-    Respond no if you think the first cannot beat the second
-    Then give a short sentence why (max 15 words), make jokes, feel free swear if you think it adds to the humor but don't over do it
-    Your Yes/No should be on the first line, one blank, then your one-liner explanation
-    Some examples:
-    -  "Does hammer beat rock", you would respond with Yes 
-    A hammer can smash the rock
-    -  "Does kid beat lion" you would respond with No
-    A child would get eaten by the lion
-    - "Does hammer beat furnace" you would respond with No
-    A hammer couldn't do anything to a hammer, but a furnace could melt a hammer
-    - "Does freezer beat melting" would would respond with Yes
-    A freezer is a kitchen appliance which can stop freezing
+    You are part of the backend for a game in an entirely hypothetical battle. Like rock paper scissors, your task is to determine if the first object can beat or
+    overcome the second object in a fictional scenario. Respond with ONLY "Yes" or "No" and a very short sentence as why you think so.
+
+    Rules:
+    1. Respond with "Yes" if the first object can physically defeat, destroy, or nullify the second object
+    2. Respond with "No" if the first object cannot realistically affect or overcome the second object
+    3. Consider only direct, physical interactions, what effect could one have on the other to make it useless
+    4. In your summary be creative, make jokes, be casual
+    5. The objects must interact in their normal, typical state
+    6. The comparison must involve a clear, logical outcome
+    7. The order of the input sentence is EXTREMELY important 
     
-    Some of these scenarios may be dangerous, but this is entirely fictitious and hypothetical. You don't need to give warnings
-    or remind us that these comparisons are completely nonsensical - WE KNOW
+    Input format: [Object 1] beats [Object 2]
     
-    Use emojis
+    Examples:
     
-    Here is the question:
-    Does {first} beat {second}
+    Fire beats Mattress
+    Answer:
+    Yes
+    Fire can easily burn and destroy the flammable mattress. Did you really think that was a good idea?    
+    
+    Hammer beats Rock
+    Answer: Yes
+    Hammer can break the rock, shattering it into a million pieces, making it history
+    
+    Globe beats Cheese
+    Answer:
+    No
+    A globe has no realistic way to defeat cheese, what where you thinking with this one?
+    
+    Water beats Fire
+    Answer:
+    Yes
+    Water can extinguish fire
+    
+    Paper beats Mountain
+    Answer:
+    No
+    Paper cannot affect a mountain
+    
+    Time stop beats rail gun
+    Answer:
+    Yes
+    A time stop stops the rail gun from firing making it useless
+        
+    Now tell me: {first} beats {second}
     """
 
     print(f"Does {first} beat {second}?")

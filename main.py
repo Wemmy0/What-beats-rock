@@ -33,6 +33,7 @@ while True:
     4. If the outcome is truly ambiguous or depends on unstated details, default to "No" and explain the uncertainty.
     5. For classic "rock-paper-scissors" style matchups, treat them as part of the established game rules.
     6. There are no limits to how fantastical or outlandish the object comparisons can be.
+    7. Your response must always start with Yes or No
     
     Now tell me:
     Does {first} beat {second}?
@@ -41,8 +42,8 @@ while True:
     print(f"Does {first} beat {second}?")
     with alive_bar(bar=None) as bar:
         response = ollama.chat(
-            # model='llama3.2',
-            model='llama3.1:8b',
+            model='llama3.2',
+            # model='llama3.1:8b',
             messages=[{'role': 'user', 'content': prompt}],
         )
         bar()

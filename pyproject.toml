@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "what-beats-rock"
+version = "0.1.0"
+description = "A simple CLI remake of the What Beats Rock game using llama3.2 locally"
+authors = ["Wemmy0 <116467716+Wemmy0@users.noreply.github.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+ollama = "^0.3.3"
+alive-progress = "^3.2.0"
+
+[tool.poetry.scripts]
+whatbeatsrock = "what_beats_rock.main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
